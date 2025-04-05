@@ -37,6 +37,7 @@ img{
 
 .row{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
@@ -53,7 +54,7 @@ img{
 
 .col2{
     border: 1px dashed rgb(218, 218, 100);
-    width:  450px;
+    width:  30rem;
     box-shadow: 5px 5px 5px 5px rgb(173, 173, 173);
     padding: 20px;
 }
@@ -77,4 +78,66 @@ body{
 
 #dife{
     border-radius: 50%;
+}
+
+nav {
+    background-color: rgba(255, 228, 196, .7);
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    gap: .5rem;
+}
+
+nav a {
+    background-color: rgba(255, 255, 0, .4);
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px 1px black;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+    transform: scale(1.05);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+.video-flex {
+    width: 100%;
+    height: 18rem;
+}
+
+.col2 img {
+    height: 18rem;
+}
+
+.col3 {
+    width: 30%;
+    border: 1px dashed rgb(218, 218, 100); 
+    box-shadow: 5px 5px 5px 5px rgb(173, 173, 173);
+    padding: 20px;
+    height: 20rem;
+}
+
+.col3 img {
+    height: 18rem;
+}
+
+.imagen {
+    width: 30rem;
+    margin: auto;
+}
+
+.imagen img {
+    border-radius: 50%;
+    border: 2px solid rgb(247, 247, 64);
+    /* filter: blur(); */
+}
+
+.imagen img:hover {
+    filter: sepia();
+    transform: scale(1.05);
+    cursor: pointer;
 }
